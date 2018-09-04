@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragment_Detail</string>
+    <string name="title_lifecycle">Fragment lifecycle</string>
+    <string name="title_method">How to add fragment</string>
+
+    <string name="static_method">Static method</string>
+    <string name="dynamic_method">Dynamic method</string>
+    <string name="add_method">Add method</string>
+</resources>

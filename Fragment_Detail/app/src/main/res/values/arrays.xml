@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_list">
+        <item>@string/title_lifecycle</item>
+        <item>@string/title_method</item>
+    </string-array>
+
+    <string-array name="method_list">
+        <item>@string/static_method</item>
+        <item>@string/dynamic_method</item>
+    </string-array>
+</resources>
