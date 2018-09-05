@@ -5,18 +5,20 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/dynamic_add_btn"
+        android:id="@+id/dynamic_add_btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dynamic_method" />
 
-    <TextView
-        android:id="@+id/lifecycle_txt"
+    <Button
+        android:id="@+id/dynamic_add_btn2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/dynamic_method" />
 
     <FrameLayout
         android:id="@+id/dynamic_add_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 </LinearLayout>

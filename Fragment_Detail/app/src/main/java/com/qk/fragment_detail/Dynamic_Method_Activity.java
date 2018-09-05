@@ -14,16 +14,24 @@ public class Dynamic_Method_Activity extends FragmentActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dynamic_method);
 
-        findViewById(R.id.dynamic_add_btn).setOnClickListener(this);
+        findViewById(R.id.dynamic_add_btn1).setOnClickListener(this);
+        findViewById(R.id.dynamic_add_btn2).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.dynamic_add_btn: {
+            case R.id.dynamic_add_btn1: {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.add(R.id.dynamic_add_container, new LifeCycle_Fragment());
+                transaction.replace(R.id.dynamic_add_container, new Fragment1());
+                transaction.commit();
+            }
+            break;
+            case R.id.dynamic_add_btn2: {
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.dynamic_add_container, new Fragment2());
                 transaction.commit();
             }
             break;
